@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student System</title>
+    <script src="studentScript.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header style="display: flex; justify-content: center">
+      <!-- <img src="./img//mmcm-logo-wText.png" style="max-width: 300px" /> -->
+      <h1>Student Directory</h1>
+    </header>
+    <main class="main-container">
+      <section class="main-wrapper">
+        <img src="./img/back.png" width="24px" onclick="history.back()" />
+        <div class="student-dashboard">
+          <h1>Student's Dashboard</h1>
+          <div style="display: flex; gap: 14px">
+            <input
+              type="text"
+              id="studentIdInput"
+              placeholder="Enter Student ID"
+            />
+            <button id="searchStudentBtn">Search</button>
+          </div>
+          <hr style="width: 80%" />
+
+          <section class="stud-details-section">
+            <div id="studentDetails"></div>
+            <div id="courseDetails"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

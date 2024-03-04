@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header style="display: flex; justify-content: center">
+      <!-- <img src="./img//mmcm-logo-wText.png" style="max-width: 300px" /> -->
+      <h1>Student Directory</h1>
+    </header>
+    <main class="main-container">
+      <section class="main-wrapper">
+        <img src="./img/back.png" width="24px" onclick="history.back()" />
+        <form id="addStudentForm">
+          <h1>Add New Student</h1>
+          <div class="studentForm-wrapper">
+            <div
+              style="display: flex; gap: 14px; justify-content: space-between"
+            >
+              <input
+                type="text"
+                id="studentName"
+                placeholder="Student Name"
+                required
+              />
+              <input
+                type="text"
+                id="studentId"
+                placeholder="Student ID"
+                required
+              />
+            </div>
+
+            <div
+              style="display: flex; gap: 14px; justify-content: space-between"
+            >
+              <select id="course" required>
+                <option value="" disabled selected>Select Course</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">
+                  Information Technology
+                </option>
+                <option value="Electrical Engineering">
+                  Electrical Engineering
+                </option>
+                <option value="Mechanical Engineering">
+                  Mechanical Engineering
+                </option>
+                <option value="Civil Engineering">Civil Engineering</option>
+              </select>
+
+              <select id="yearLevel" required>
+                <option value="">Select Year Level</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column">
+              <label>
+                <input type="radio" name="transferee" value="Yes" required />
+                Transferee
+              </label>
+              <label>
+                <input type="radio" name="transferee" value="No" required /> Not
+                a Transferee
+              </label>
+
+              <label>
+                <input type="radio" name="studyMode" value="Regular" required />
+                Regular
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="studyMode"
+                  value="Irregular"
+                  required
+                />
+                Irregular
+              </label>
+            </div>
+
+            <div>
+              <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <input
+                type="tel"
+                id="phoneNumber"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+          <!-- <div>
+          </div> -->
+        </form>
+      </section>
+    </main>
+
+    <script src="addStudentScript.js"></script>
+  </body>
+</html>
